@@ -1,6 +1,6 @@
 from math import pi,pow
 
-def areaOfCircle(rad):
+def area_of_circle(rad):
     try:
         rad = int(rad)
         return (pi * pow(rad,2))
@@ -12,7 +12,7 @@ def areaOfCircle(rad):
 
 if __name__ == "__main__":
     rad = input("Please enter the radius of circle: ")
-    area = areaOfCircle(rad)
+    area = area_of_circle(rad)
     if area != None:
         print("Area of the Circle with the radius ", rad, " unit is: ", area, " square unit.")
     
