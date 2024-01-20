@@ -1,3 +1,5 @@
+#Write a program to find the maximum and minimum values in a list.
+
 def get_values(n):
     lstValues = []
     i = 0
@@ -19,16 +21,19 @@ def min_max_values(lstValues):
         minVal = min(num,minVal)
         maxVal = max(num,maxVal)
     
-    return (minVal,maxVal)
-
+    return (minVal,maxVal)  
 
 if __name__ == "__main__":
-    n = int(input("Enter the number of elements in the list: "))
-    if n == 0:
-        print("Sum of elements is : 0.")
-    else:
-        lstValues = get_values(n)
-        minVal, maxVal = min_max_values(lstValues)
+    x = input("Enter the number of elements in the list: ")
+    try:
+        n = int(x)
+        if n == 0:
+            print("No elements in the list to find the minimum and maximum elements.")
+        else:
+            lstValues = get_values(n)
+            minVal, maxVal = min_max_values(lstValues)
 
-        print("Minimum Value in the list is: ",minVal)
-        print("Maximum Value in the list is: ",maxVal)
+            print("Minimum Value in the list is: ",minVal)
+            print("Maximum Value in the list is: ",maxVal)
+    except ValueError:
+        print("Please enter valid number!")

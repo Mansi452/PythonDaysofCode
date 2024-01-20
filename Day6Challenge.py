@@ -1,3 +1,5 @@
+#Write a program to count the occurrences of a specific character in a string.
+
 def count_occurrence(string,cha):
     count = 0 
     for c in string:

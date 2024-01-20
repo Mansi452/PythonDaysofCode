@@ -1,3 +1,5 @@
+#Write a function to count the number of vowels in a given string.
+
 def count_vowels(string):
     counter = len([char for char in string if char in 'aeiouAEIOU'])
 

@@ -1,3 +1,5 @@
+#Write a program to find the sum of all elements in a list.
+
 def get_values(n):
     lstValues = []
     i = 0

@@ -1,3 +1,5 @@
+#Write a program to remove duplicates from a list.
+
 def get_values(n):
     lstValues = []
     for _ in range(n):
@@ -19,8 +21,13 @@ def remove_duplicates(lstValues):
     
     
 if __name__ == "__main__":
-    n = int(input("Enter the number of elements in the list: "))
-    lstValues = get_values(n)
-    updatedList = remove_duplicates(lstValues)
+    x = input("Enter the number of elements in the list: ")
+    try:
+        n = int(x)
+        lstValues = get_values(n)
+        updatedList = remove_duplicates(lstValues)
 
-    print("Updated list after removing the duplicates: ",updatedList)
+        print("Updated list after removing the duplicates: ",updatedList)
+    except ValueError:
+        print("Please enter valid number!")
+    

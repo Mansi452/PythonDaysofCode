@@ -1,3 +1,5 @@
+#Write a program to calculate the area of a circle given its radius.
+
 from math import pi,pow
 
 def area_of_circle(rad):

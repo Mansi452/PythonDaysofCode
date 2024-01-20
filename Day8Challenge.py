@@ -1,3 +1,5 @@
+#Write a function that accepts a string and calculates the number of uppercase and lowercase letters in it.
+
 def count_Upper_Lower(string):
     upperCount, lowerCount = 0, 0
     for char in string:
@@ -12,7 +14,7 @@ def count_Upper_Lower(string):
 
 
 if __name__ == "__main__":
-    string = input("Please enter the value to be added to the list: ")
+    string = input("Please enter the striing: ")
     upCount, lowCount = count_Upper_Lower(string)
 
     if upCount == lowCount == 0:
